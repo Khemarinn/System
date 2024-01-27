@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/bb2e0fcc63.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login" action="/login" method="post">
+        <i id="user-icon" class="fa-solid fa-circle-user"></i>
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          required="Username"
+        />
+        <i id="lock-icon" class="fa-solid fa-lock"></i>
+        <input
+          id="password"
+          type="password"
+          minlength="8"
+          maxlength="24"
+          placeholder="Password"
+          required
+        />
+        <!-- <i id="eye-icon" class="fa-solid fa-eye"></i> -->
+        <i id="eye-slash-icon" class="fa-solid fa-eye-slash"></i>
+        <a href="#" class="btn-login">Login</a>
+      </form>
+      <div class="login-image">
+        <img src="img/loginImage.png" alt="" />
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
